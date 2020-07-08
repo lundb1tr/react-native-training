@@ -14,18 +14,20 @@ const ListScreen = () => {
     { name: "Austin", age: 27 },
   ];
   return (
-    <FlatList
-      showsVerticalScrollIndicator={false}
-      keyExtractor={(friend) => friend.name}
-      data={friends}
-      renderItem={({ item }) => {
-        return (
-          <Text style={styles.textStyle}>
-            {item.name} - Age: {item.age}
-          </Text>
-        );
-      }}
-    />
+    <View>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        keyExtractor={(friend) => friend.name}
+        data={friends}
+        renderItem={({ item }) => {
+          return (
+            <Text style={styles.textStyle}>
+              {item.name} - Age: {item.age}
+            </Text>
+          );
+        }}
+      />
+    </View>
   );
 };
 
