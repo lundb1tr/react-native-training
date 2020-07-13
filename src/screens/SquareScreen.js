@@ -7,16 +7,15 @@ const COLOR_INCREMENT = 15;
 const reducer = (state, { colorToChange, amount }) => {
   /* state === { red: #, green: #, blue: # } */
   /* action === { colorToChange: color, amount: +/- 15 } */
-  switch (colorToChange) {
-    case 'red':
-      return { ...state, red: state[colorToChange] + amount };
-    case 'green':
-      return { ...state, green: state[colorToChange] + amount };
-    case 'blue':
-      return { ...state, blue: state[colorToChange] + amount };
-    default:
-      break;
+  const colorObj = { ...state };
+  if (amount > 0 && amount + state[colorToChange] > 255) {
+    colorObj[colorToChange] = 255;
+  } else if (amount < 0 && amount + state[colorToChange] < 0) {
+    colorObj[colorToChange] = 0;
+  } else {
+    colorObj[colorToChange] = state[colorToChange] + amount;
   }
+  return colorObj;
 };
 
 const SquareScreen = () => {
