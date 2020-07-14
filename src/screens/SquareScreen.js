@@ -6,7 +6,7 @@ const COLOR_INCREMENT = 15;
 
 const reducer = (state, { type, payload }) => {
   /* state = { red: #, green: #, blue: # } */
-  /* type = action to take */
+  /* type = action to take e.g. change_'color' */
   /* payload = how much we will change the color by */
   const colorToChange = type.replace('change_', '');
   const colorObj = { ...state };

@@ -3,6 +3,9 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 const INCREMENT_AMOUNT = 20;
 const reducer = (state, { type, payload }) => {
+  /* state = { counter: # } */
+  /* type = increment || decrement */
+  /* payload = # to add to counter */
   const stateObj = { ...state };
   if (type === 'increment' && stateObj.counter + payload > 100) {
     stateObj.counter = 100;
