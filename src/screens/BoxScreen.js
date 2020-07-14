@@ -13,38 +13,27 @@ const BoxScreen = () => {
 
 const styles = StyleSheet.create({
   parentStyle: {
+    borderWidth: 3,
+    borderColor: 'black',
     height: 200,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
   viewOneStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+    height: 50,
+    width: 50,
     backgroundColor: 'red',
-    opacity: 80,
-    height: 80,
-    width: 80,
-    borderRadius: 5,
   },
   viewTwoStyle: {
-    borderWidth: 3,
-    borderColor: 'green',
+    height: 50,
+    width: 50,
     backgroundColor: 'green',
-    opacity: 80,
-    fontSize: 18,
-    borderRadius: 5,
-    height: 80,
-    width: 80,
-    top: 80,
+    marginTop: 50,
   },
   viewThreeStyle: {
-    borderWidth: 3,
-    borderColor: 'purple',
+    height: 50,
+    width: 50,
     backgroundColor: 'purple',
-    opacity: 80,
-    height: 80,
-    width: 80,
-    borderRadius: 5,
   },
 });
 
