@@ -11,6 +11,7 @@
   "prettier.configPath": "./JS-Submodule/.prettierrc",
   "files.eol": "\n",
   "cSpell.ignoreWords": [
+    "Parens",
     "acfault",
     "active",
     "active bttn",
@@ -64,6 +65,7 @@
     "ipaddress",
     "lightpage",
     "lowon",
+    "lundberg",
     "maint",
     "mixins",
     "navi",
@@ -91,6 +93,7 @@
     "start",
     "status",
     "tankheater",
+    "teilia",
     "toggleable",
     "touchstop",
     "truetype",
@@ -104,8 +107,7 @@
     "winegard",
     "xantrex",
     "xite",
-    "zone",
-    "Parens"
+    "zone"
   ],
   "cSpell.words": [],
   "editor.fontSize": 18
